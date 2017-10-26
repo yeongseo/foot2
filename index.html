@@ -34,8 +34,8 @@
 		t.style.background = "url('p_" + randomBH(1,4) + ".png') no-repeat";
 		//2. 풍선의 이미지 사이즈 지정
 		t.style.backgroundSize = "100% auto";
-		t.style.top = event.x //randomBH(0,window.innerHeight) + "px";
-		t.style.left =event.y // randomBH(0,window.innerWidth) + "px";
+		t.style.top = randomBH(0,window.innerHeight) + "px";
+		t.style.left = randomBH(0,window.innerWidth) + "px";
 		t.addEventListener("animationend",remove);
 		document.body.appendChild(t);		
 	}
